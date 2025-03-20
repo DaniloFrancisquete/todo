@@ -6,6 +6,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatButtonModule} from '@angular/material/button';
 import { Router } from '@angular/router';
 import { Todo } from '../../models/todo';
+import { TodoService } from '../../services/todo.service';
 
 @Component({
   selector: 'app-create',
@@ -24,16 +25,31 @@ export class CreateComponent implements OnInit{
   }
 
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private service: TodoService) {}
 
-  }
+  
   
   ngOnInit(): void {
     
+  }
+
+  create(): void {
+    this.formatData();
+    this.service.create(this.todo).subscribe((resposta) => {
+    this.service.message('to-do criado com sucesso!');
+    this.router.navigate(['']);
+    },err => {
+      this.service.message('falha ao criar Todo-do');
+      this.router.navigate(['']);  
+    })
   }
 
   cancel(): void {
     this.router.navigate(['']);
   }
 
+   formatData(): void {
+    let data = new Date(this.todo.dataParaFinalizar)
+    this.todo.dataParaFinalizar = `${data.getDate()}/${data.getMonth() + 1}/${data.getFullYear()}`
+   } 
 }
