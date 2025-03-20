@@ -1,3 +1,19 @@
 import { Routes } from '@angular/router';
+import { ReadAllComponent } from './components/read-all/read-all.component';
+import { FinalizadosComponent } from './components/finalizados/finalizados.component';
+import { CreateComponent } from './components/create/create.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+    {
+        path: '',
+        component: ReadAllComponent
+    },
+    {
+        path:'finalizados',
+        component: FinalizadosComponent
+    },
+    {
+        path:'create',
+        component: CreateComponent
+    }
+];
