@@ -29,3 +29,7 @@ button {
     padding-right: 2rem;
     padding-left: 2rem;
 }
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: #e0e2ec2b !important;
+}
