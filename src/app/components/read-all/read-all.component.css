@@ -1,8 +1,30 @@
-
 .container {
     width: 85%;
-    margin:auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+    padding-bottom: 80px; 
+    box-sizing: border-box; 
 }
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+mat-card {
+    margin-top: 0.8rem;
+    padding: 0.5rem;
+    background-color: rgb(158 158 158 / 4%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    z-index: 0; 
+}
+
+
 
 .badge {
     margin-top: 1.5rem;
@@ -17,9 +39,7 @@
 }
 
 
-.content {
-    width: 100%;
-}
+
 
 
 
@@ -32,11 +52,7 @@
     margin-top: 3rem;
 }
 
-mat-card {
-    margin-top: .8rem;
-    padding: .5rem;
-    background-color: rgb(158 158 158 / 4%);
-}
+
 
 p {
     text-align: end;
@@ -47,10 +63,12 @@ p {
 
 .actions {
     text-align: end;
+    position: relative; 
+    z-index: 0; 
 }
 
 .actions button {
-    margin: .5rem;
+    margin: 0.5rem;
 }
 
 .color-red{

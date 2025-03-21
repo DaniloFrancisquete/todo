@@ -1,13 +1,21 @@
+
 .footer {
-    height: 10%;
-    bottom: 0;
     justify-content: flex-end;
     font-size: 1rem;
-    margin-top: 2rem;
-    position: fixed;
-}
-
-.mat-toolbar {
+    height: 60px; /* Altura do rodapé */
+    position: fixed; /* Mantém fixo no final da tela */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
     background: var(--mat-toolbar-container-background-color, var(--mat-app-surface));
     color: var(--mat-toolbar-container-text-color, var(--mat-app-on-surface));
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Sombra no topo */
 }
+
+
+
+
+
+
