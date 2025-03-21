@@ -1,8 +1,13 @@
 .footer {
-    height: 5%;
-    position: fixed;
+    height: 10%;
     bottom: 0;
     justify-content: flex-end;
     font-size: 1rem;
+    margin-top: 2rem;
+    position: fixed;
+}
 
+.mat-toolbar {
+    background: var(--mat-toolbar-container-background-color, var(--mat-app-surface));
+    color: var(--mat-toolbar-container-text-color, var(--mat-app-on-surface));
 }

@@ -1,3 +1,4 @@
+
 .container {
     width: 85%;
     margin:auto;
@@ -20,6 +21,12 @@
     width: 100%;
 }
 
+
+
+.card-descri {
+    color: #000000ba;
+}
+
 .novo-todo{
     width: 100%;
     margin-top: 3rem;
@@ -28,12 +35,13 @@
 mat-card {
     margin-top: .8rem;
     padding: .5rem;
+    background-color: rgb(158 158 158 / 4%);
 }
 
 p {
     text-align: end;
     font-weight: 600;
-    color: rgb(144, 111, 111);
+    color: rgb(63 81 181 / 92%);
     margin-bottom: 0;
 }
 
@@ -44,3 +52,19 @@ p {
 .actions button {
     margin: .5rem;
 }
+
+.color-red{
+    color: blanchedalmond;
+    background-color: brown;
+}
+
+.color-edit {
+    color: black;
+    background-color: rgb(246, 246, 11); 
+}
+
+.color-done {
+    color: blanchedalmond;
+    background-color:purple; 
+}
+
